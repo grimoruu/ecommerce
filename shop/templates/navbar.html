@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-md navbar-light bg-dark container-fluid">
+	<a href="{% url 'home' %}" class="navbar-brand ms-3">
+		<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="green" class="bi bi-house"
+			viewBox="0 0 16 16">
+			<path fill-rule="evenodd"
+				d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+			<path fill-rule="evenodd"
+				d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+		</svg>
+	</a>
+
+	<button class="navbar-toggler bg-light" data-bs-toggle="collapse" href="#collapseExample1" aria-expanded="false"
+		aria-controls="collapseExample1"><span class="navbar-toggler-icon"></span></button>
+	<div class="collapse navbar-collapse justify-content-between" id="collapseExample1">
+		<ul class="navbar-nav">
+			<li class="nav-item dropdown">
+				<a class="nav-link text-light text-uppercase fw-bold dropdown-toggle" id="dropdownMenuButton2"
+					data-bs-toggle="dropdown" aria-expanded="false" href="">Categories</a>
+
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+					<a href="" class="dropdown-item">Category1</a>
+					<a href="" class="dropdown-item">Category2</a>
+					<a href="" class="dropdown-item">Category3</a>
+					<a href="" class="dropdown-item">Category4</a>
+					<a href="" class="dropdown-item">Category5</a>
+				</div>
+			</li>
+
+			<li class="nav-item"><a class="nav-link text-light text-uppercase fw-bold" href="">Contacts</a></li>
+			<li class="nav-item"><a class="nav-link text-light text-uppercase fw-bold"
+					href="{% url 'product' %}">Product</a>
+			</li>
+		</ul>
+
+
+		<form action="#" class="form-inline me-3">
+			<div class="input-group">
+				<input type="text" placeholder="Search" id="">
+				<div>
+					<button class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+							fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+							<path
+								d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+						</svg></button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+</nav>
